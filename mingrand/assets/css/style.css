@@ -587,13 +587,13 @@ ul {
   float: inherit;
 }
 
-.btn.btn-sm {
+/* .btn.btn-sm {
   height: 18px;
   line-height: 20px;
   font-size: 11px;
   width: 52px;
   padding: 0;
-}
+} */
 
 .btn.radius-btn {
   border-radius: 50px;
@@ -4858,4 +4858,83 @@ ul {
   margin-right: 0;
   padding-right: 0;
   border-right: 0;
+}
+
+/* Testimonial Card  */
+
+
+
+
+.card .header {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.card > * {
+  padding: 5px;
+  line-height: 1.5;
+}
+
+/* .card .header .name {
+  font-size: 1.2em;
+} */
+
+.card .avatar {
+  border-radius: 50%;
+}
+
+
+
+
+.card:nth-of-type(2) {
+  background: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+
+.card:nth-of-type(5) {
+  background: hsl(0, 0%, 100%);
+  grid-column: 4;
+  grid-row: 1 / 3;
+}
+
+.card:nth-of-type(3) {
+  background: hsl(0, 0%, 100%);
+}
+
+.card:nth-of-type(4) {
+  background: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+  grid-column: 2 / 4;
+}
+
+@media(max-width: 800px) {
+  .container {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+/* own btn-sm css property  */
+.btn-sm {
+  padding: 0.4rem 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 0.2rem;
+
+}
+.lable_div { 
+  margin-top: -1.3rem;
+  margin-right: -1.3rem;
+}
+
+.quote { 
+font-size: 12px;
+}
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.rounded-4 {
+  border-radius: 0.5rem !important;
 }
